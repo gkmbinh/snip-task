@@ -1,0 +1,34 @@
+setup default python version
+http://web.mit.edu/6.00/www/handouts/pybuntu.html
+
+python -V
+at the terminal. For purposes of this example we'll assume you have 3.1 installed. You'll next need to execute the following commands:
+sudo apt-get install python2.6 idle-python2.6
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.1 1
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.6 10
+sudo update-alternatives --config python
+
+
+/////////////////////////
+Noi Dung Khoa Hoc
+https://docs.google.com/spreadsheets/d/1xmx8M3JIDHlmw-hIh3hW9Pw6J7qUwzPdQTMpRbFUWyI/edit
+
+Slides:
+SEssion 01.
+https://docs.google.com/presentation/d/1aHhdxW4-bBsYTeSkYzXQNjg0QTaoA0ApQfdeTOPc8VQ/edit#slide=id.gc6f75fceb_0_10
+
+
+
+http://vietjack.com/python/index.jsp
+http://www.tutorialspoint.com/python/python_overview.htm
+
+
+Python Tutorial for Beginners
+https://www.youtube.com/watch?v=vIY5p4W6JTk&index=2&list=PL1Z_7yg6Pa3CURAEFLwzXRYrhGcQskRhY
+
+
+Python Tutorial: Creating Web Sites using Python and Flask
+https://www.youtube.com/watch?v=M1IVwFAH9Wo
+
+Python Web Apps with Flask by Ezra Zigmond
+https://codek.tv/v/qla-KaMF-2Q/python-web-apps-with-flask-by-ezra-zigmond/
