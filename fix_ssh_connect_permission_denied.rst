@@ -98,3 +98,40 @@ left uncommand PasswordAuthentication yes, become like as.
   # Change to no to disable tunnelled clear text passwords
   PasswordAuthentication yes
   
+#====================================== CREATE PEM FILE TO SSH WITHOUT PASSWORD
+
+create pub key, priv key.
+https://help.ubuntu.com/community/SSH/OpenSSH/Keys
+Generating RSA Keys
+
+The first step involves creating a set of RSA keys for use in authentication.
+
+This should be done on the client.
+
+To create your public and private SSH keys on the command-line:
+::
+  mkdir ~/.ssh
+  chmod 700 ~/.ssh
+  ssh-keygen -t rsa
+
+You will be prompted for a location to save the keys, and a passphrase for the keys. This passphrase will protect your private key while it's stored on the hard drive:
+::
+  
+  Generating public/private rsa key pair.
+  Enter file in which to save the key (/home/b/.ssh/id_rsa):
+  Enter passphrase (empty for no passphrase):
+  Enter same passphrase again:
+  Your identification has been saved in /home/b/.ssh/id_rsa.
+  Your public key has been saved in /home/b/.ssh/id_rsa.pub.
+
+Your public key is now available as .ssh/id_rsa.pub in your home folder.
+
+Congratulations! You now have a set of keys. Now it's time to make your systems allow you to login with them 
+
+
+then create pem file.
+::
+  openssl rsa -in ~/.ssh/id_rsa -outform pem > id_rsa.pem
+
+
+
